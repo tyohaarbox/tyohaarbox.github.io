@@ -1253,12 +1253,21 @@
               </ul>
             </div>
             <div class="contact-form">
+              <div
+                id="sf-success-message"
+                class="success-message"
+                style="display: none"
+              >
+                Thank you! Your request has been submitted. We will contact you
+                soon.
+              </div>
               <form
+                id="sf-contact-form"
                 action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DdL00000WTUhz"
                 method="POST"
+                target="sf-form-frame"
               >
                 <input type="hidden" name="oid" value="00DdL00000WTUhz" />
-                <input type="hidden" name="retURL" value="http://" />
                 <div class="form-row">
                   <div class="form-group">
                     <label for="first_name">First Name</label>
@@ -1368,6 +1377,7 @@
                 </div>
                 <button type="submit" class="submit-btn">Submit</button>
               </form>
+              <iframe name="sf-form-frame" style="display: none"></iframe>
             </div>
           </div>
         </div>
@@ -1413,6 +1423,17 @@
     </footer>
 
     <script>
+      // Salesforce form success message logic
+      const sfForm = document.getElementById("sf-contact-form");
+      const sfSuccess = document.getElementById("sf-success-message");
+      if (sfForm && sfSuccess) {
+        sfForm.addEventListener("submit", function () {
+          setTimeout(function () {
+            sfForm.style.display = "none";
+            sfSuccess.style.display = "block";
+          }, 1200);
+        });
+      }
       // Mobile menu toggle
       const mobileMenu = document.getElementById("mobileMenu");
       const navLinks = document.getElementById("navLinks");
