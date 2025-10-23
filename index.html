@@ -1242,7 +1242,10 @@
                   <div class="contact-icon">✉️</div>
                   <span>sales@tyohaarbox.in</span>
                 </li>
-                
+                <li>
+                  <div class="contact-icon">📍</div>
+                  <span>Pan India</span>
+                </li>
                 <li>
                   <div class="contact-icon">⏰</div>
                   <span>24-hour response guarantee</span>
@@ -1250,118 +1253,120 @@
               </ul>
             </div>
             <div class="contact-form">
-              <div class="success-message" id="successMessage">
-                🎉 Thank you! We'll send you a detailed quote within 24 hours.
-                Our team will contact you shortly to discuss your requirements.
-              </div>
-              <form id="contactForm">
+              <form
+                action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DdL00000WTUhz"
+                method="POST"
+              >
+                <input type="hidden" name="oid" value="00DdL00000WTUhz" />
+                <input type="hidden" name="retURL" value="http://" />
                 <div class="form-row">
                   <div class="form-group">
-                    <label for="company">Company Name *</label>
+                    <label for="first_name">First Name</label>
                     <input
+                      id="first_name"
+                      maxlength="40"
+                      name="first_name"
+                      size="20"
                       type="text"
-                      id="company"
-                      name="company"
-                      required
-                      placeholder="Your Company"
                     />
                   </div>
                   <div class="form-group">
-                    <label for="name">Your Name *</label>
+                    <label for="last_name">Last Name</label>
                     <input
+                      id="last_name"
+                      maxlength="80"
+                      name="last_name"
+                      size="20"
                       type="text"
-                      id="name"
-                      name="name"
-                      required
-                      placeholder="Full Name"
                     />
                   </div>
                 </div>
                 <div class="form-row">
                   <div class="form-group">
-                    <label for="email">Email Address *</label>
+                    <label for="email">Email</label>
                     <input
-                      type="email"
                       id="email"
+                      maxlength="80"
                       name="email"
-                      required
-                      placeholder="your@email.com"
+                      size="20"
+                      type="email"
+                      placeholder="Enter your email"
                     />
                   </div>
                   <div class="form-group">
-                    <label for="phone">Phone Number *</label>
+                    <label for="company">Company</label>
                     <input
-                      type="tel"
-                      id="phone"
-                      name="phone"
-                      required
-                      placeholder="+91 70238 07440"
+                      id="company"
+                      maxlength="40"
+                      name="company"
+                      size="20"
+                      type="text"
+                      placeholder="Enter your company name"
                     />
                   </div>
                 </div>
                 <div class="form-row">
                   <div class="form-group">
-                    <label for="giftType">Gift Purpose</label>
-                    <select id="giftType" name="giftType">
-                      <option value="">Select purpose</option>
-                      <option value="client-appreciation">
+                    <label for="00NdL00001g4weD">Quantity</label>
+                    <input
+                      id="00NdL00001g4weD"
+                      name="00NdL00001g4weD"
+                      size="20"
+                      type="number"
+                      placeholder="Estimated number of gifts"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="00NdL00001g4wmH">Gift Purpose</label>
+                    <select
+                      id="00NdL00001g4wmH"
+                      name="00NdL00001g4wmH"
+                      title="Gift Purpose"
+                    >
+                      <option value="">--None--</option>
+                      <option value="Client Appreciation">
                         Client Appreciation
                       </option>
-                      <option value="employee-recognition">
+                      <option value="Employee Recognition">
                         Employee Recognition
                       </option>
-                      <option value="festival-gifts">Festival Gifts</option>
-                      <option value="corporate-events">Corporate Events</option>
-                      <option value="product-launch">Product Launch</option>
-                      <option value="custom-request">Custom Request</option>
+                      <option value="Festival Gifts">Festival Gifts</option>
+                      <option value="Corporate Events">Corporate Events</option>
+                      <option value="Product Launch">Product Launch</option>
+                      <option value="Custom Request">Custom Request</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="00NdL00001g4x41">Timeline</label>
+                    <select
+                      id="00NdL00001g4x41"
+                      name="00NdL00001g4x41"
+                      title="Timeline"
+                    >
+                      <option value="">--None--</option>
+                      <option value="Within 1 week (Rush Order)">
+                        Within 1 week (Rush Order)
+                      </option>
+                      <option value="2-3 weeks">2-3 weeks</option>
+                      <option value="1 month">1 month</option>
+                      <option value="Flexible timeline">
+                        Flexible timeline
+                      </option>
                     </select>
                   </div>
                   <div class="form-group">
-                    <label for="quantity">Quantity Needed</label>
-                    <input
-                      type="number"
-                      id="quantity"
-                      name="quantity"
-                      min="1"
-                      placeholder="e.g., 100"
-                    />
+                    <label for="description">Description</label>
+                    <textarea
+                      name="description"
+                      id="description"
+                      title="Describe your requirements"
+                      placeholder="Describe your vision, specific products, branding, delivery, or any special requests..."
+                    ></textarea>
                   </div>
                 </div>
-                <div class="form-group">
-                  <label for="budget">Budget Range (per gift)</label>
-                  <select id="budget" name="budget">
-                    <option value="">Select budget range</option>
-                    <option value="500-1000">₹500 - ₹1,000</option>
-                    <option value="1000-2500">₹1,000 - ₹2,500</option>
-                    <option value="2500-5000">₹2,500 - ₹5,000</option>
-                    <option value="5000-10000">₹5,000 - ₹10,000</option>
-                    <option value="10000+">₹10,000+</option>
-                  </select>
-                </div>
-                <div class="form-group">
-                  <label for="timeline">When do you need this?</label>
-                  <select id="timeline" name="timeline">
-                    <option value="">Select timeline</option>
-                    <option value="urgent">Within 1 week (Rush order)</option>
-                    <option value="2-weeks">2-3 weeks</option>
-                    <option value="1-month">1 month</option>
-                    <option value="flexible">Flexible timeline</option>
-                  </select>
-                </div>
-                <div class="form-group">
-                  <label for="message"
-                    >Tell us more about your requirements</label
-                  >
-                  <textarea
-                    id="message"
-                    name="message"
-                    rows="4"
-                    placeholder="Describe your vision, specific products you have in mind, branding requirements, delivery locations, or any special requests..."
-                  ></textarea>
-                </div>
-                <button type="submit" class="submit-btn">
-                  Get My Custom Quote →
-                </button>
+                <button type="submit" class="submit-btn">Submit</button>
               </form>
             </div>
           </div>
@@ -1396,13 +1401,13 @@
           <h4>Contact</h4>
           <p>📞 +91 70238 07440</p>
           <p>✉️ sales@tyohaarbox.in</p>
-          
+          <p>📍 Pan India</p>
         </div>
       </div>
       <div class="footer-bottom">
         <p>
-          &copy; 2024 Tyohaarbox. All rights reserved. | Fresh thinking in
-          corporate gifting since August 2024
+          &copy; 2025 Tyohaarbox. All rights reserved. | Fresh thinking in
+          corporate gifting since August 2025
         </p>
       </div>
     </footer>
