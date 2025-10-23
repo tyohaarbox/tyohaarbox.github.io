@@ -106,11 +106,24 @@ ote</a>
           <h2>Featured & Bestsellers</h2>
           <div class="controls">
             <input id="search" type="search" placeholder="Search products (e.g., jacket, bottle)" aria-label="Search products" />
-            <select id="sort">
+            <label for="sort" class="visually-hidden">Sort products</label>
+            <select id="sort" aria-label="Sort products">
               <option value="pop">Sort: Popular</option>
               <option value="asc">Price: Low to High</option>
               <option value="desc">Price: High to Low</option>
             </select>
+<style>
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+</style>
           </div>
         </div>
         <div id="productGrid" class="grid products-grid" aria-live="polite"></div>
@@ -171,11 +184,10 @@ ote</a>
           <h2>Get a Custom Quote</h2>
           <p>Share your requirements—quantity, category, branding needs—and we’ll respond quickly with options and timelines.</p>
           <ul class="contact-list">
-            <li><strong>Email:</strong> mailto:hello@tyohaarbox.examplehello@tyohaarbox.example</a></li>
-            <li><strong>Phone/WhatsApp:</strong> https://wa.me/910000000000+91 00000 00000</a></li>
+            <li><strong>Email:</strong> <a href="mailto:sales@tyohaarbox.example">sales@tyohaarbox.example</a></li>
+            <li><strong>Phone/WhatsApp:</strong> <a href="https://wa.me/917023807440" target="_blank" rel="noopener">+91 00000 00000</a></li>
           </ul>
         </div>
-        #
           <label>
             <span>Your Name</span>
             <input type="text" name="name" required />
