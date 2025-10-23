@@ -240,7 +240,7 @@
       }
 
       .btn-secondary {
-        background: transparent;
+        background: white;
         color: #1a1a1a;
         padding: 1rem 2rem;
         border: 2px solid #d4b896;
@@ -579,6 +579,108 @@
       .process-step p {
         color: #666;
         line-height: 1.6;
+      }
+
+      /* Partners Section */
+      .partners {
+        padding: 6rem 0;
+        background: #fafbfc;
+      }
+
+      .partners-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        margin-top: 3rem;
+      }
+
+      .partner-card {
+        background: white;
+        padding: 2rem;
+        border-radius: 16px;
+        text-align: center;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        transition: all 0.3s ease;
+        border: 1px solid #e9ecef;
+      }
+
+      .partner-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        border-color: #d4b896;
+      }
+
+      .partner-logo {
+        margin-bottom: 1.5rem;
+      }
+
+      .brand-icon {
+        width: 60px;
+        height: 60px;
+        background: #d4b896;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        color: white;
+        margin: 0 auto 1rem;
+      }
+
+      .partner-card h3 {
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: #1a1a1a;
+        margin-bottom: 1rem;
+      }
+
+      .partner-card p {
+        color: #666;
+        line-height: 1.6;
+        margin-bottom: 1.5rem;
+      }
+
+      .partner-products {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        justify-content: center;
+      }
+
+      .partner-products span {
+        background: #f8f9fa;
+        color: #666;
+        padding: 0.3rem 0.8rem;
+        border-radius: 20px;
+        font-size: 0.8rem;
+        font-weight: 500;
+        border: 1px solid #e9ecef;
+      }
+
+      .partners-stats {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 2rem;
+        margin-top: 4rem;
+        padding-top: 3rem;
+        border-top: 1px solid #e9ecef;
+      }
+
+      .stat-item {
+        text-align: center;
+      }
+
+      .stat-number {
+        font-size: 2.5rem;
+        font-weight: 800;
+        color: #d4b896;
+        margin-bottom: 0.5rem;
+      }
+
+      .stat-label {
+        font-size: 1rem;
+        color: #666;
+        font-weight: 600;
       }
 
       /* Why Choose Section */
@@ -943,10 +1045,11 @@
           <li><a href="#home">Home</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#how-it-works">Process</a></li>
+          <li><a href="#partners">Partners</a></li>
           <li><a href="#why-choose">Why Us</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-        <a href="#contact" class="cta-nav">Get Quote</a>
+        <a href="#contact" class="cta-nav">Get Started</a>
         <button class="mobile-menu" id="mobileMenu">☰</button>
       </nav>
     </header>
@@ -964,7 +1067,6 @@
             </p>
             <div class="hero-buttons">
               <a href="#contact" class="btn-primary"> Start Your Order → </a>
-              <a href="#portfolio" class="btn-secondary">View Our Work</a>
             </div>
           </div>
           <div class="hero-visual">
@@ -1150,6 +1252,145 @@
         </div>
       </section>
 
+      <section class="partners loading" id="partners">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-badge">Trusted Partners</div>
+            <h2 class="section-title">Premium Brand Partnerships</h2>
+            <p class="section-subtitle">
+              We collaborate with India's leading brands to bring you authentic,
+              high-quality corporate gifts that make lasting impressions.
+            </p>
+          </div>
+          <div class="partners-grid">
+            <div class="partner-card">
+              <div class="partner-logo">
+                <img
+                  class="brand-logo"
+                  src="assets/img/wildcraft-logo.png"
+                  alt="Wildcraft Logo"
+                  style="height: 40px; width: auto; object-fit: contain"
+                />
+                <h3>Wildcraft</h3>
+              </div>
+              <p>
+                Premium outdoor gear and adventure accessories for corporate
+                teams and outdoor enthusiasts.
+              </p>
+              <div class="partner-products">
+                <span>Backpacks</span>
+                <span>Tshirts & Jackets</span>
+                <span>Travel Gear</span>
+                <span>Outdoor Equipment</span>
+              </div>
+            </div>
+            <div class="partner-card">
+              <div class="partner-logo">
+                <img
+                  class="brand-logo"
+                  src="assets/img/cello-logo.png"
+                  alt="Cello Logo"
+                  style="height: 40px; width: auto; object-fit: contain"
+                />
+                <h3>Cello</h3>
+              </div>
+              <p>
+                Trusted writing instruments and stationery solutions perfect for
+                corporate gifting and office use.
+              </p>
+              <div class="partner-products">
+                <span>Premium Pens</span>
+                <span>Gift Sets</span>
+                <span>Office Supplies</span>
+              </div>
+            </div>
+            <div class="partner-card">
+              <div class="partner-logo">
+                <img
+                  class="brand-logo"
+                  src="assets/img/asics-logo.png"
+                  alt="Asics Logo"
+                  style="height: 40px; width: auto; object-fit: contain"
+                />
+                <h3>Asics</h3>
+              </div>
+              <p>
+                World-class athletic footwear and sportswear for employee
+                wellness and fitness programs.
+              </p>
+              <div class="partner-products">
+                <span>Running Shoes</span>
+                <span>Sports Apparel</span>
+                <span>Fitness Gear</span>
+              </div>
+            </div>
+            <div class="partner-card">
+              <div class="partner-logo">
+                <div class="brand-icon">🏠</div>
+                <h3>Home & Living</h3>
+              </div>
+              <p>
+                Premium home decor and lifestyle products for sophisticated
+                corporate gifting needs.
+              </p>
+              <div class="partner-products">
+                <span>Home Decor</span>
+                <span>Kitchen Essentials</span>
+                <span>Lifestyle Products</span>
+              </div>
+            </div>
+            <div class="partner-card">
+              <div class="partner-logo">
+                <div class="brand-icon">💼</div>
+                <h3>Tech & Gadgets</h3>
+              </div>
+              <p>
+                Latest technology accessories and gadgets perfect for modern
+                corporate professionals.
+              </p>
+              <div class="partner-products">
+                <span>Power Banks</span>
+                <span>Bluetooth Speakers</span>
+                <span>Tech Accessories</span>
+              </div>
+            </div>
+            <div class="partner-card">
+              <div class="partner-logo">
+                <div class="brand-icon">🌿</div>
+                <h3>Wellness & Care</h3>
+              </div>
+              <p>
+                Health and wellness products that show you care about your
+                employees' and clients' well-being.
+              </p>
+              <div class="partner-products">
+                <span>Wellness Kits</span>
+                <span>Organic Products</span>
+                <span>Self-Care Items</span>
+              </div>
+            </div>
+          </div>
+          <div class="partners-stats">
+            <div class="stat-item">
+              <div class="stat-number">50+</div>
+              <div class="stat-label">Brand Partners</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">1000+</div>
+              <div class="stat-label">Product Options</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">100%</div>
+              <div class="stat-label">Authentic Products</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">24hrs</div>
+              <div class="stat-label">Quote Response</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="why-choose loading">
         <div class="container">
           <div class="section-header">
@@ -1277,6 +1518,7 @@
                       name="first_name"
                       size="20"
                       type="text"
+                      placeholder="First Name*"
                     />
                   </div>
                   <div class="form-group">
@@ -1287,6 +1529,7 @@
                       name="last_name"
                       size="20"
                       type="text"
+                      placeholder="Last Name*"
                     />
                   </div>
                 </div>
@@ -1299,7 +1542,7 @@
                       name="email"
                       size="20"
                       type="email"
-                      placeholder="Enter your email"
+                      placeholder="Email*"
                     />
                   </div>
                   <div class="form-group">
@@ -1310,7 +1553,7 @@
                       name="company"
                       size="20"
                       type="text"
-                      placeholder="Enter your company name"
+                      placeholder="Company*"
                     />
                   </div>
                 </div>
@@ -1322,7 +1565,7 @@
                       name="00NdL00001g4weD"
                       size="20"
                       type="number"
-                      placeholder="Estimated number of gifts"
+                      placeholder="Quantity*"
                     />
                   </div>
                   <div class="form-group">
