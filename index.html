@@ -271,7 +271,7 @@
         max-width: 500px;
       }
 
-      .gift-box {
+      /* .gift-box {
         width: 200px;
         height: 200px;
         background: #d4b896;
@@ -289,7 +289,36 @@
         left: 50%;
         transform: translate(-50%, -50%);
         font-size: 4rem;
-      }
+      } */
+
+
+      .gift-box {
+  width: 200px;
+  height: 200px;
+  background: #d4b896;
+  border-radius: 20px;
+  position: relative;
+  margin: 0 auto;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  animation: float 6s ease-in-out infinite;
+}
+
+.gift-box::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  width: 120px;   /* adjust size as needed */
+  height: 120px;  /* adjust size as needed */
+  
+  background-image: url("assets/img/logo.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 
       .floating-elements {
         position: absolute;
